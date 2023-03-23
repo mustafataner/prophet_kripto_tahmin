@@ -11,14 +11,14 @@ TODAY = date.today().strftime("%Y-%m-%d")
 
 st.write("""
 # kripto fiyat tahmin uygulaması
-**KULLANIM: BTC-ETH-DOT usd paritlerinden birini seçerek prophet ile 2 ay sonraki kripto para birimini tahmin etmek için yazılmıştır.
+**KULLANIM: BTC-ETH-DOT usd paritlerinden birini seçerek prophet tahminleme modeli ile 2 ay sonraki kripto para birimini tahmin etmek için yazılmıştır.
 **YASAL UYARI:** Bu uygulama yalnızca deneme amaçlıdır. Yatırım tavsiyesi değildir. Bu uygulamada sunulan verilerin doğruluğu veya eksiksizliği konusunda herhangi bir sorumluluk kabul edilmemektedir. Lütfen yatırım kararları vermeden önce uzman bir danışmana başvurunuz.
 """)
 
 
 st.title('kripto fiyat tahmin uygulaması')
 
-stocks = ('BTC-USD', 'ETH-USD',  'DOT-USD')
+stocks = ('BTC-USD', 'ETH-USD',  'DOT-USD','LINK-USD')
 selected_stock = st.selectbox('TAHMİN İÇİN VERİ SETİNİ SEÇİNİZ', stocks)
 
 # selected_stock = st.text_input("Hisse senedi sembolünü girin (Örn: AAPL):") böyle kullanıcı girecektir
