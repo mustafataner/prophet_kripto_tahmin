@@ -11,7 +11,7 @@ TODAY = date.today().strftime("%Y-%m-%d")
 
 st.write("""
 # kripto fiyat tahmin uygulaması
-
+**KULLANIM: BTC-ETH-DOT usd paritlerinden birini seçerek prophet ile 2 ay sonraki kripto para birimini tahmin etmek için yazılmıştır.
 **YASAL UYARI:** Bu uygulama yalnızca deneme amaçlıdır. Yatırım tavsiyesi değildir. Bu uygulamada sunulan verilerin doğruluğu veya eksiksizliği konusunda herhangi bir sorumluluk kabul edilmemektedir. Lütfen yatırım kararları vermeden önce uzman bir danışmana başvurunuz.
 """)
 
