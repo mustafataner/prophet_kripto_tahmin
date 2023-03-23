@@ -11,7 +11,8 @@ TODAY = date.today().strftime("%Y-%m-%d")
 
 st.write("""
 # kripto fiyat tahmin uygulaması
-**KULLANIM: BTC-ETH-DOT usd paritlerinden birini seçerek prophet tahminleme modeli ile 2 ay sonraki kripto para birimini tahmin etmek için yazılmıştır.
+**KULLANIM: BTC-ETH-DOT-LINK usd paritlerinden birini seçerek prophet tahminleme modeli ile 2 ay sonraki kripto para birimini tahmin etmek için yazılmıştır.
+
 **YASAL UYARI:** Bu uygulama yalnızca deneme amaçlıdır. Yatırım tavsiyesi değildir. Bu uygulamada sunulan verilerin doğruluğu veya eksiksizliği konusunda herhangi bir sorumluluk kabul edilmemektedir. Lütfen yatırım kararları vermeden önce uzman bir danışmana başvurunuz.
 """)
 
@@ -68,7 +69,7 @@ forecast = m.predict(future)
 st.subheader('TAHMİN VERİLERİ')
 st.write(forecast.tail())
 
-st.write(f" {n_years} AYLIK TAHMİN GRAFİĞİ \n (kırmızı çizgiler tahmin, mavi çizgiler gerçek değerleridir.)")
+st.write(f" {n_years} AYLIK TAHMİN GRAFİĞİ \n(kırmızı çizgiler tahmin, mavi çizgiler gerçek değerleridir.)")
 fig1 = plot_plotly(m, forecast)
 fig1.update_traces(line=dict(color='red'), marker=dict(color='blue'))
 st.plotly_chart(fig1)
