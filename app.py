@@ -29,7 +29,7 @@ n_years = 2
 period = 60
 
 
-@st.cache_data(ttl=60*5))
+@st.cache_data(ttl=60*5)
 def load_data(ticker):
     data = yf.download(ticker, START, TODAY)
     data.reset_index(inplace=True)
