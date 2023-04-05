@@ -73,8 +73,10 @@ st.write(f" {n_years} AYLIK TAHMİN GRAFİĞİ \n(kırmızı çizgiler tahmin, m
 fig1 = plot_plotly(m, forecast)
 fig1.update_traces(line=dict(color='red'), marker=dict(color='blue'))
 st.plotly_chart(fig1)
+st.plotly_chart(fig1, use_container_width=True)
 
 
 st.write("tahmin bileşenleri")
 fig2 = m.plot_components(forecast)
 st.write(fig2)
+st.plotly_chart(fig2, use_container_width=True)
