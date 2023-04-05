@@ -50,7 +50,7 @@ def plot_raw_data():
     fig.add_trace(go.Scatter(x=data['Date'], y=data['Open'], name="stock_open", line=dict(color='red')))
     fig.add_trace(go.Scatter(x=data['Date'], y=data['Close'], name="stock_close", line=dict(color='green')))
     fig.layout.update(title_text='ZAMAN SERİSİ VERİLERİ', xaxis_rangeslider_visible=True)
-    st.plotly_chart(fig)
+    
     st.plotly_chart(fig, use_container_width=True)
 
 
@@ -72,11 +72,11 @@ st.write(forecast.tail())
 st.write(f" {n_years} AYLIK TAHMİN GRAFİĞİ \n(kırmızı çizgiler tahmin, mavi çizgiler gerçek değerleridir.)")
 fig1 = plot_plotly(m, forecast)
 fig1.update_traces(line=dict(color='red'), marker=dict(color='blue'))
-st.plotly_chart(fig1)
+
 st.plotly_chart(fig1, use_container_width=True)
 
 
 st.write("tahmin bileşenleri")
 fig2 = m.plot_components(forecast)
-st.write(fig2)
+
 st.plotly_chart(fig2, use_container_width=True)
