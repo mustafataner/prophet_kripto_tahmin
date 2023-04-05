@@ -78,4 +78,4 @@ st.plotly_chart(fig1, use_container_width=True)
 
 st.write("tahmin bileşenleri")
 fig2 = m.plot_components(forecast)
-st.plotly_chart(fig2)
+st.write(fig2)
