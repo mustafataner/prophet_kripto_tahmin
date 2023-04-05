@@ -51,7 +51,7 @@ def plot_raw_data():
     fig.add_trace(go.Scatter(x=data['Date'], y=data['Close'], name="stock_close", line=dict(color='green')))
     fig.layout.update(title_text='ZAMAN SERİSİ VERİLERİ', xaxis_rangeslider_visible=True)
     st.plotly_chart(fig)
-
+    st.plotly_chart(fig, use_container_width=True)
 
 
 plot_raw_data()
