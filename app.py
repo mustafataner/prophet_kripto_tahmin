@@ -19,7 +19,7 @@ st.write("""
 
 st.title('kripto fiyat tahmin uygulaması')
 
-stocks = ('BTC-USD', 'ETH-USD',  'DOT-USD','LINK-USD')
+stocks = ('BTC-USD', 'ETH-USD',  'DOT-USD','LINK-USD','AGIX-USD')
 selected_stock = st.selectbox('TAHMİN İÇİN VERİ SETİNİ SEÇİNİZ', stocks)
 
 # selected_stock = st.text_input("Hisse senedi sembolünü girin (Örn: AAPL):") böyle kullanıcı girecektir
