@@ -4,4 +4,4 @@ numpy==1.21.5
 prophet==1.1.4
 yfinance==0.2.12
 plotly==5.9.0
-python==3.10
+python==3.9.13
